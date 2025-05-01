@@ -1,0 +1,162 @@
+.heroSection {
+  position: relative;
+  background: url('https://preview.colorlib.com/theme/podca/images/hero_bg_1.jpg.webp') no-repeat top center;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 40px 80px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.menuIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.menuIcon:hover {
+  transform: scale(1.1);
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.content {
+  margin-top: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.content h1 {
+  font-size: 2.8rem;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #f24b3a;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #d83a2c;
+}
+
+.audioPlayer {
+  background: black;
+  padding: 8px;
+  margin-top: auto;
+  max-width: 700px;
+  align-self: center;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.audio {
+  width: 100%;
+  max-width: 100%;
+  background: black;
+  display: block;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 1024px) {
+  .heroSection {
+    padding: 40px 40px;
+  }
+
+  .content h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 30px 20px;
+  }
+
+  .content h1 {
+    font-size: 1.8rem;
+  }
+
+  .meta {
+    font-size: 0.85rem;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 1.5rem;
+  }
+
+  .audioPlayer {
+    padding: 6px;
+  }
+
+  .audio {
+    width: 100%;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .menuIcon svg {
+    width: 24px;
+    height: 24px;
+  }
+}
