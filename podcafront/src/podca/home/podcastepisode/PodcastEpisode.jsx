@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router"; // Bu eklendi
 import styles from "./PodcastEpisode.module.css";
 import { FiMenu } from "react-icons/fi";
 
@@ -9,6 +10,13 @@ const PodcastEpisode = () => {
 
       <div className={styles.header}>
         <div className={styles.logo}>Podca</div>
+        
+        <div className={styles.navLinks}>
+          <Link to="/dashboard" className={styles.dashboardLink}>
+            Dashboard
+          </Link>
+        </div>
+
         <div className={styles.menuIcon}>
           <FiMenu size={28} color="#fff" />
         </div>

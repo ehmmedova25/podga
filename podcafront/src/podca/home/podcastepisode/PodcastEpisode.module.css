@@ -160,3 +160,23 @@
     height: 24px;
   }
 }
+.navLinks {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.dashboardLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.dashboardLink:hover {
+  background-color: #fff;
+  color: #000;
+}
