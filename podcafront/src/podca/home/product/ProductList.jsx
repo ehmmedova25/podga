@@ -18,11 +18,10 @@ const ProductList = () => {
         <div className={styles.productGrid}>
             {products.slice(0, 6).map((product) => (
                 <div key={product.id} className={styles.productCard}>
-                    <img src={product.image} alt={product.title} />
+                    <img src={product.image} alt={product.name} />
                     <div className={styles.cardBody}>
                         <h4>{product.title}</h4>
-                        <p>{product.category}</p>
-                        <p>${product.price}</p>
+                        <p className={styles.price}>${product.price}</p>
                     </div>
                 </div>
             ))}
